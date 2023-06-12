@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+.HomePage  {
+display:flex;
+align-items: center;
+flex-direction: column;
+margin: 20px;
+text-align: center;
+color: rgb(76, 73, 73);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.HomePage div {
+  width: fit-content;
+  overflow: hidden;
+  padding: 20px 20px;
+  width: 500px;
+  border: 1px solid #b6b3b3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.HomePage img {
+  width: 500px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.BeersList {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  border: 1px solid #b6b3b3;
+  padding: 25px;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.BeersList div {
+  margin-left: 20px;
+  margin-bottom: 15px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.DetailsPage  {
+display: flex;
+align-items: center;
+flex-direction: column;
+width: 600px;
+margin-top: 20px;
+margin-left: 20px;
+padding-top: 20px;
+border: 1px solid #b6b3b3;
+}
+
+.DetailsPage img {
+  align-self: center;
+}
+.components {
+  display: flex;
+  flex-direction: row;
+}
+
+.componentRight {
+  float: right;
+  margin-left: 250px;
+}
+.DetailsPage p {
+  margin-left: 30px;
 }
