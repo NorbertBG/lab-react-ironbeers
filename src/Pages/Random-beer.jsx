@@ -1,15 +1,13 @@
-import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Navbar from '../Components/Navbar';
 
-function BeersDetails() {
+function RandomBeer() {
   const [beers, setBeers] = useState([]);
-  const { beersId } = useParams();
 
   useEffect(() => {
     axios
-      .get(`https://ih-beers-api2.herokuapp.com/beers/${beersId}`)
+      .get(`https://ih-beers-api2.herokuapp.com/beers/random`)
       .then((response) => {
         console.log(response.data);
         setBeers(response.data);
@@ -38,4 +36,4 @@ function BeersDetails() {
   );
 }
 
-export default BeersDetails;
+export default RandomBeer;

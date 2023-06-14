@@ -5,6 +5,11 @@ flex-direction: column;
 margin: 20px;
 text-align: center;
 color: rgb(76, 73, 73);
+
+}
+.HomePage a {
+  text-decoration: none;
+  color: rgb(76, 73, 73);
 }
 
 .HomePage div {
@@ -41,7 +46,9 @@ width: 600px;
 margin-top: 20px;
 margin-left: 20px;
 padding-top: 20px;
+padding: 20px;
 border: 1px solid #b6b3b3;
+
 }
 
 .DetailsPage img {
@@ -56,6 +63,10 @@ border: 1px solid #b6b3b3;
   float: right;
   margin-left: 250px;
 }
-.DetailsPage p {
-  margin-left: 30px;
+
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
